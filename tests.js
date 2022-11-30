@@ -100,3 +100,10 @@ describe('isEven', function (){
         expect(isEven()).toBe(false);
     });
 })
+
+describe('isVowel', function () {
+    it('should be a defined funcion', function () {
+        expect(typeof isEven).toBe('function');
+    });
+
+})
