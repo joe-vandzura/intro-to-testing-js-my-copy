@@ -47,3 +47,11 @@ function isVowel(input) {
         return false;
     }
 }
+
+function add(numOne, numTwo) {
+    /*if (isNaN(parseFloat(numOne) + parseFloat(numTwo)) === true) {
+        return NaN;
+    } else {*/
+        return parseFloat(numOne) + parseFloat(numTwo);
+    //}
+}
