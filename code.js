@@ -27,3 +27,15 @@ function isFive(input) {
         return false;
     }
 }
+
+function isEven(input){
+    if (typeof input === "number") {
+        if (input % 2 === 0) {
+            return true;
+        } else {
+            return false;
+        }
+    } else {
+        return false;
+    }
+}
