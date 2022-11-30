@@ -8,5 +8,14 @@ const helloWorld = function () {
 }
 
 function sayHello(input) {
-    return `Hello, ${input}!`;
+    if (input === true || input === false || input === "") {
+        return helloWorld();
+    } else if (input === null) {
+        return "Hello, null?";
+    } else if (typeof input === "number") {
+        return "Your name is a number?";
+    }
+    else {
+        return `Hello, ${input}!`;
+    }
 }
