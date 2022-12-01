@@ -55,3 +55,5 @@ function add(numOne, numTwo) {
         return parseFloat(numOne) + parseFloat(numTwo);
     //}
 }
+
+console.log(add());

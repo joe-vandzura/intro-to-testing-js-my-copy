@@ -151,12 +151,19 @@ describe('add', function () {
         expect(add(-4, 10)).toBe(6);
     })
     it('should return NaN when passed ("banana", "split")', function () {
-        expect(add("banana", "split")).toBe(NaN);
+        expect(add("banana", "split")).toBeNaN();
     })
     it('should return NaN when passed (2, "apples")', function () {
-        expect(add(2, "apples")).toBe(NaN);
+        expect(add(2, "apples")).toBeNaN();
     })
     it('should return NaN when exercised without an argument', function () {
-        expect(add()).toBe(NaN);
+        expect(add()).toBeNaN();
     })
 })
+
+/*
+describe('add', function() {
+    it('shall return NaN', function() {
+        expect(isNaN(add())).toBe(true);
+    });
+});*/
